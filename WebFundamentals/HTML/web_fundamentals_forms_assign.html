@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+      label{
+        display:inline-block;
+        width:100px;
+        }
+   </style>
+ </head>
+
+ <form>
+
+   <h1>My Registration Form</h1>
+
+    <p>
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name"><br>
+    </p>
+
+    <p>
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name">
+    </p>
+
+    <p>
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email">
+    </p>
+
+    <p>
+      <label for="password">Password</label>
+      <input type="text" id="password" name="password">
+    </p>
+
+    <p>
+      <label for="pw_confirm">PW Confirm</label>
+      <input type="text" id="pw_confirm" name="pw_confirm">
+    </p>
+
+    <p>
+      <label for="b_date">Birthday</label>
+      <input type="date" id="b_date" name ="b_date"><br>
+    </p>
+
+    <p>
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="other"> Other
+    </p>
+
+    <p>
+      A short description about yourself
+      <label for="short_desc"></label><br><br>
+      <textarea id = "short_desc" name="short_desc"></textarea>
+    </p>
+
+    <p>Favorite language
+      <select name="favorite_lang">
+        <option value="python">Python</option>
+        <option value="ruby">Ruby</option>
+        <option value="R">R</option>
+        <option value="c++">C++</option>
+      </select>
+    </p>
+
+    <p>
+      <input type="submit" value="Submit">
+    </p>
+
+  </form>
+
+</html>
