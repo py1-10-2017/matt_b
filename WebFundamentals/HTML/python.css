@@ -154,7 +154,7 @@
 
 }
 
-#bottom_col{
+.bottom_col{
   background: white;
   width: 475px;
   height: 275px;
@@ -163,30 +163,30 @@
 
 }
 
-#bottom_col h2{
+.bottom_col h2{
   text-align: center;
 
 }
 
-#bottom_col p{
+.bottom_col p{
   text-align: center;
   margin-left: 60px;
   margin-right: 50px;
 
 }
 
-#bottom_col ul{
+.bottom_col ul{
   text-align: center;
   text-decoration: none;
   list-style-position: inside;
 }
 
-#bottom_col a{
+.bottom_col a{
   text-decoration: none;
   color: #3498DB;
 }
 
-#bottom_col li{
+.bottom_col li{
   list-style-type: square;
 }
 
@@ -196,6 +196,12 @@
   height: 75px;
   vertical-align: top;
   text-align: center;
+}
+
+hr.line{
+  width: 75%;
+  size: 10px;
+  border-color: #3498DB;
 }
 
 #nav_bar_footer ul li{
