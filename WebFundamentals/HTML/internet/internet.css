@@ -1,0 +1,234 @@
+#global_wrapper{
+  margin: 20px;
+  width: 1000px;
+}
+
+#header{
+  width: 1000px;
+  height: 125px;
+  background-color: white;
+}
+
+#globe{
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 50px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+p{
+  display: inline;
+  font-weight: bold;
+}
+
+.p_blue{
+  color: #377BA9;
+  font-weight: bond;
+}
+
+
+h2{
+  vertical-align: tops;
+  margin-left: 5px;
+  font-size: 35px;
+  margin-top: 0px;
+  display: block;
+  background-color: #377BA9;
+  color: white;
+  width: 980px;
+  height: 55px;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-family: sans-serif;
+}
+
+#header_text{
+  color: #377BA9;
+}
+
+#side_bar{
+  width: 215px;
+  height: 500px;
+  background-color: white;;
+  margin-top: 40px;
+  margin-left: 5px;
+  display: inline-block;
+
+}
+
+h5{
+  margin: 0px;
+}
+
+h3{
+  display: inline;
+}
+
+#header_text3{
+  color: red;
+  margin-bottom: 5px;
+}
+
+
+#video{
+    margin: auto;
+    margin-top: 25px;
+    width: 175px;
+    height: 35px;
+    display: block;
+    border-radius: 5px;
+    background-color: #377BA9;
+    color: white;
+    font-weight: bold;
+
+  }
+
+#resources{
+  margin: auto;
+  margin-top: 5px;
+  width: 175px;
+  height: 35px;
+  display: block;
+  border-radius: 5px;
+  background-color: orange;
+  color:white;
+  font-weight: bold;
+}
+
+#nav_pic{
+  width: 215px;
+}
+
+
+
+#ninja_back{
+  width: 215px;
+  height: 400px;
+}
+
+#ninja{
+  width: 115px;
+  position: absolute;
+  top: 550px;
+  left: 80px;
+}
+
+#learn_more{
+
+  margin: auto;
+  width: 175px;
+  height: 35px;
+  position: absolute;
+  top: 745px;
+  left: 50px;
+  border-radius: 5px;
+  background-color: #00bfff;
+  color:white;
+  font-weight: bold;
+}
+
+#nav_pic p{
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+#content_header{
+  width: 770px;
+  height: 100px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+#home_pic{
+  width: 25px;
+  height: 25px;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+#contact{
+  background-color: white;
+  display: inline-block;
+  width: 225px;
+  height: 75px;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#phone_pic{
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+  margin-left: 400px;
+  display: inline;
+
+
+}
+
+#contact .p_contact{
+
+  font-size: 13px;
+  color: #377BA9;
+  margin-left: 10px;
+  display: inline;
+
+}
+
+#contact_number{
+  font-size: 33px;
+  color: #377BA9;
+  text-align: center;
+}
+
+#DNS_p{
+  vertical-align: top;
+  margin-top: 5px;
+  color: #377BA9;
+}
+
+#content_middle{
+  width: 770px;
+  height: 400px;
+  background-color: white;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#client_server{
+  width: 475px;
+  height: 175px;
+  margin-left: 150px;
+  display: block;
+}
+
+.html_css_js {
+	margin-top: 20px;
+	border-top: 5px #0084df solid;
+	border-right: 5px #0084df solid;
+	border-left: 5px #0084df solid;
+
+}
+.html_css_js img{
+	width: 100px;
+	display: inline-block;
+}
+.html_css_js div	{
+	display:inline-block;
+	width: 580px;
+}
