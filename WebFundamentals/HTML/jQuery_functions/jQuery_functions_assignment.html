@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Practice</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$(".navigation p:eq(2)").click(function(){
+				$(".row_content").slideUp(1000);
+			});
+
+
+			$(".button_add_class").click(function(){
+
+				$(".p_add_class").toggleClass("red");
+				});
+
+			$(".slide_img").hide();
+			$(".p_append").hide();
+
+
+			$(".navigation img").click(function(){;
+				$(".row_content").slideDown(1000)
+			});
+
+			$(".add_image").click(function(){
+
+				$(".slide_img").slideToggle(300);
+				$(".row_content:eq(1) h2").toggle();
+				
+				});
+
+			$(".append_btn").click(function(){
+
+				$(".p_append").toggle();
+				
+				});
+		});
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+			<div class="navigation">
+				<p id="left_arrow">&#8678;</p>
+				<p id="right_arrow">&#8680;</p>
+				<p class='delete'>&#x2716;</p>
+				<img class="house_pic" src="house.png" alt="home">
+			</div>
+			<div class="title_int_search">
+				<h1>My jQuery basic  assignment</h1>
+				<input class="html_address"></input>
+			</div>
+			<form class="search_form">
+	 			<span><input type="text" class="search_rounded" placeholder="Search..."></span>
+			</form>
+
+		</div>
+
+		<div class="row_content">
+
+			<button class="button_add_class">AddClass</button>
+			<div class="addclass">
+				<h2>AddClass</h2>
+				<p class="p_add_class">Click the button to add class "red" to this paragraph</p>
+			</div>
+
+		</div>
+		<div class="row_content">
+
+			<button class="add_image">SideToggle</button>
+			<div class="addclass">
+			<img class="slide_img" src="https://www.w3schools.com/images/w3schools_green.jpg">
+				<h2>SideToggle</h2>
+				<p>Click the button to sidetoggle a hidden image</p>
+			</div>
+			
+		</div>
+		<div class="row_content">
+
+			<button class="append_btn">Append</button>
+			<div class="addclass">
+				<h2>Append</h2>
+				<p>Click the button to append a new paragraph!</p>
+				<p class="p_append">This is a new paragraph</p>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

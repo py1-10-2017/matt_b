@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ninja-Cat</title>
+</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$("img").click(function(){
+				$(this).attr("src", $(this).attr("alt_source"));
+			});
+
+		});
+
+
+	</script>
+
+	<style type="text/css">
+
+		img{
+			display: block;
+			margin-top: 10px;
+		}
+		
+
+	</style>
+<body>
+
+	<img src="cat0.png" alt_source="ninja0.png">
+	<img src="cat1.png" alt_source="ninja1.png">
+	<img src="cat2.png" alt_source="ninja3.png">
+	<img src="cat3.png" alt_source ="ninja2.png">
+	<img src="cat4.png" alt_source ="cat2.png">
+	<img src="ninja0.png" alt_source ="cat3.png">
+	<img src="ninja1.png" alt_source ="cat0.png">
+	<img src="ninja2.png" alt_source ="ninja0.png">
+	<img src="ninja3.png" alt_source ="ninja4.png">
+	<img src="ninja4.png" alt_source ="cat4.png">
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+
+
+.header{
+
+	width: 1000px;
+	height: 200px;
+	border-bottom-color: lightgray;
+	border-bottom-style: solid;
+
+}
+
+.header p{
+	display: inline-block;
+	font-size: 50px;
+	margin-left: 30px;
+
+}
+
+.navigation{
+
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#left_arrow{
+
+	cursor: pointer;
+	cursor: hand;
+}
+
+#right_arrow{
+	cursor: pointer;
+	cursor: hand;
+}
+
+.delete{
+	cursor: pointer;
+	cursor: hand;
+}
+
+.highlight{
+	background-color: yellow;
+}
+
+.house_pic{
+
+	width: 30px;
+	height: 30px;
+	margin-left: 30px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.title_int_search{
+
+	display: inline-block;
+
+	vertical-align: top;
+	margin-left: 25px;
+}
+
+.title_int_seach h1{
+	vertical-align: center;
+}
+
+.html_address{
+	width: 400px
+}
+
+.search_form{
+	display: inline-block;
+	width: 30px;
+	margin-left: 25px;
+}
+
+.search_rounded { 
+	padding:6px 15px 6px 30px;
+	margin:3px; 
+	background: url('search.png') no-repeat 8px 6px; 
+	background-size: 10px 10px;
+	border-radius:15px; 
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px; 
+}
+
+.row_content{
+	width: 800px;
+	height: 200px;
+	border-bottom-style: solid;
+	border-bottom-color: gray;
+	margin-left: 75px;
+	margin-top: 25px;
+	margin-bottom: 75px;
+}
+
+.wrapper{
+	width: 1000px;
+	height: 1000px;
+	border-style: solid;
+	border-color: lightgray;
+}
+
+
+
+.row_content button{
+
+	width: 200px;
+	height: 75px;
+	vertical-align: top;
+	margin-top: 60px;
+}
+
+ .red {
+    color: red;
+  }
+
+.addclass{
+
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.addclass h2{
+	display: inline-block;
+	font-size: 75px;
+	margin: 0px;
+	margin-left: 100px;
+}
+
+.addclass p{
+	display: block;
+	font-size: 25px;
+}
