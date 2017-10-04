@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemon</title>
+	<script src='http://code.jquery.com/jquery-1.10.2.min.js'></script> 
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			for(var i = 1; i <= 151; i++){
+
+				var img_link = "https://pokeapi.co/media/img/" + i + ".png";
+
+				$(".img_container").append("<img id = "+i+" src="+img_link+">");
+
+			};
+
+			$("img").click(function(){
+
+
+				$(".img_selector").empty();
+
+				var id = $(this).attr('id');
+
+				var link = ("https://pokeapi.co/api/v1/pokemon/"+id+"/")
+
+				$.get(link, function(res) {
+                   console.log(res);
+
+                   var name = res.name
+                   var img_link = "https://pokeapi.co/media/img/" + id + ".png";
+
+                    var html_str = "";
+                    html_str += "<h4>Types</h4>";
+                    html_str += "<ul>"; 
+
+                   for(i=0;i<res.types.length;i++){
+                   		 html_str += "<li>" + res.types[i].name + "</li>";
+
+                   }
+                   html_str += "</ul>"; 
+
+                   $(".img_selector").append("<h1>"+name+"</h1>");
+                   $(".img_selector").append("<img src="+img_link+">");
+                   $(".img_selector").append(html_str);
+                   $(".img_selector").append("<h4>Height</h4><p>"+res.height+"</p>");
+                   $(".img_selector").append("<h4>Weight</h4><p>"+res.weight+"</p>");
+
+
+
+                }, "json");
+
+
+			});
+
+
+		});
+		
+
+	</script>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="img_container">
+			
+		</div>
+
+		<div class="img_selector">
+			
+
+		</div>
+
+
+		
+	</div>
+
+
+
+</body>
+
+	<style type="text/css">
+		
+		.container{
+			margin: 25px;
+			width: 1200px;
+			border: solid 1px lightgray;
+			display: inline-block;
+		}
+
+		.img_container{
+			width: 800px;
+			display: inline-block;
+		}
+
+		.img_selector{
+			width: 300px;
+			height: 700px;
+			padding: 25px;
+			display: inline-block;
+			border-left: solid 1px lightgray;
+			vertical-align: top;
+		}
+
+
+	</style>
+
+
+</html>

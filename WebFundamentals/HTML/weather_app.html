@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+	<script src='http://code.jquery.com/jquery-1.10.2.min.js'></script> 
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+
+			$("form").submit(function(){
+
+				$(".weather_content").empty();
+
+				var api_key = "8f038d9726edc762f142a3de893d6cdb";
+
+				var city = $("input").val();
+
+				var url = "http://api.openweathermap.org/data/2.5/weather?q="+city+"&&appid="+api_key;
+			
+				$.get(url, function(res){
+
+					var fahren = res.main.temp * (9/5) - 459.67;
+					$(".weather_content").append("<h1>"+city+"</h1>");
+					$(".weather_content").append("<h3>Temperature is "+Math.round(fahren)+"</h3>");
+
+				}, 'json');
+
+
+
+
+				return false;
+			});
+
+			
+
+
+
+			
+
+		});
+		
+
+	</script>
+</head>
+<body>
+
+	<form>
+
+		<input type="text" name="city_search">
+		<input type="submit" name="submit_btn" value="Search Weather">
+		
+
+	</form>
+
+	<div class="weather_content">
+		
+
+	</div>
+
+
+
+</body>
+
+	<style type="text/css">
+
+		.weather_content{
+			width: 960px;
+			height: 500px;
+			border: solid 1px lightgray;
+			margin-top: 25px;
+		}		
+		
+	</style>
+
+
+</html>
