@@ -18,16 +18,16 @@ test_array = [sI, mI, bI, eI, spI, sS, mS, bS, eS, aL, mL, lL, eL, spL]
 for item in test_array:
 	if(type(item) == int):
 		if(item <100):
-			print("That's a small number")
+			print(item, ": That's a small number")
 		else:
-			print("That's a big number!")
-	elif(isinstance(item, str) )
+			print(item, ": That's a big number!")
+	elif isinstance(item, basestring):
 		if(len(item)<50):
-			print("Short sentance")
+			print(item, ": Short sentance")
 		else:
-			print("Long sentance")
-	elif(type(item) == list)
+			print(item, ": Long sentance")
+	elif isinstance(item, list):
 		if(len(item)<10):
-			print("Short list")
+			print(item, ": Short list")
 		else:
-			print("Long list!")
+			print(item, ": Long list!")
